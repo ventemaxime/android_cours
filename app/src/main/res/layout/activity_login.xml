@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vente.login.activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="480dp"
+        android:layout_height="707dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="9dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/idText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="5dp"
+            android:text="Identifiant"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idText"
+            android:layout_alignParentStart="true"
+            android:hint="Identifiant"
+            android:text="mvente"
+            android:layout_marginTop="5dp"
+            android:id="@+id/editText3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:text="tralala"
+            android:hint="Mot de passe"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:id="@+id/editText4" />
+
+        <Button
+            android:id="@+id/auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText4"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:text="s'authentifier"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
